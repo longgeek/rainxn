@@ -148,58 +148,5 @@ export default {
             </div>
         </div>
     </section>
-    <b-modal
-        id="modal-project"
-        hide-footer
-        size="md"
-        header-close-variant="white"
-        header-class="border-0"
-        content-class="border-0"
-        centered
-    >
-        <div class="card text-center border-0 p-4">
-            <div class="position-relative">
-                <img
-                    src="images/qrcode-project.png"
-                    class="img-fluid avatar avatar-ex-large shadow"
-                    alt=""
-                />
-            </div>
-            <div class="card-body py-3 px-0 content">
-                <h6 class="mb-1 mt-4">
-                    <a href="javascript:void(0)" class="name text-dark">
-                        请使用微信扫一扫，并填写表单完成申请
-                    </a>
-                </h6>
-            </div>
-        </div>
-    </b-modal>
-
-    <b-modal
-        id="modal-co-creator"
-        hide-footer
-        size="md"
-        header-close-variant="white"
-        header-class="border-0"
-        content-class="border-0"
-        centered
-    >
-        <div class="card text-center border-0 p-4">
-            <div class="position-relative">
-                <img
-                    src="images/qrcode-co-creator.png"
-                    class="img-fluid avatar avatar-ex-large shadow"
-                    alt=""
-                />
-            </div>
-            <div class="card-body py-3 px-0 content">
-                <h6 class="mb-1 mt-4">
-                    <a href="javascript:void(0)" class="name text-dark">
-                        请使用微信扫一扫，并填写表单完成申请
-                    </a>
-                </h6>
-            </div>
-        </div>
-    </b-modal>
 </div>
 </template>

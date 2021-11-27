@@ -97,9 +97,9 @@
                         <form>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <a href="/contact" class="btn btn-soft-primary btn-block">
+                                    <router-link to="/contact" class="btn btn-soft-primary btn-block">
                                         联系我们
-                                    </a>
+                                    </router-link>
                                 </div>
                             </div>
                         </form>

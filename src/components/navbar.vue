@@ -136,7 +136,10 @@ export default {
                         class="navigation-menu"
                         :class="{ 'nav-light': navLight === true }"
                     >
-                        <li class="has-submenu" :class="{ active: $route.name === 'home'}">
+                        <!-- li :class="{ active: $route.name == 'home'}">
+                            <router-link to="/" class="side-nav-link-ref">首页</router-link>
+                        </li -->
+                        <!-- li class="has-submenu" :class="{ active: $route.name === 'home'}">
                             <router-link :to="homeUrl" class="side-nav-link-ref">关于我们</router-link>
                             <span class="menu-arrow"></span>
                             <ul class="submenu">
@@ -168,7 +171,7 @@ export default {
                         </li>
                         <li :class="{ active: $route.name == 'contact'}">
                             <router-link to="/contact" class="side-nav-link-ref">联系我们</router-link>
-                        </li>
+                        </li -->
                     </ul>
                 </div>
                 <!--end navigation-->

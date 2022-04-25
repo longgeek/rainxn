@@ -5,7 +5,7 @@
     export default {
         data() {
             return {
-                doNotShowNavbar: ['error', 'event-column'],
+                doNotShowNavbar: ['error'],
             }
         },
         components: {
@@ -16,14 +16,14 @@
             // All subcomponent titles will be injected into this template.
             titleTemplate(title) {
                 title = typeof title === "function" ? title(this.$store) : title;
-                return title ? `${title} · 雨本信息科技` : '雨本信息科技';
+                return title ? `${title} · OpenCity Community` : '开放城市共同体';
             }
         },
     }
 </script>
 <template>
     <div id="app">
-        <Navbar v-if="doNotShowNavbar.indexOf($route.name) == -1" />
+        <Navbar v-if="doNotShowNavbar.indexOf($route.name) == -1" :nav-light="true" />
         <router-view />
         <Footer />
 

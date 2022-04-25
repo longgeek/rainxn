@@ -11,6 +11,8 @@
   "dependencies": {
     "@iconscout/unicons": "^3.0.6",
     "moment": "^2.29.1",
+    "swiper": "^5.4.5",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-baidu-map": "^0.21.22",
     "vue-carousel": "^0.18.0",
     "vue-count-to": "^1.0.13",

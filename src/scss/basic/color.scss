@@ -155,7 +155,7 @@
 .btn-outline-primary.active,
 .btn-outline-primary.focus,
 .btn-outline-primary:not(:disabled):not(.disabled):active {
-    box-shadow: 0 3px 5px 0 rgba(199, 26, 47, 0.3);
+    box-shadow: 0 3px 5px 0 rgba(71, 181, 84, 0.3);
 }
 
 .btn-primary:hover,
@@ -170,14 +170,14 @@
 .btn-soft-primary,
 .badge-soft-primary,
 .bg-soft-primary {
-    background-color: rgba(199, 26, 47, 0.1) !important;
-    border: 1px solid rgba(199, 26, 47, 0.1) !important;
+    background-color: rgba(71, 181, 84, 0.1) !important;
+    border: 1px solid rgba(71, 181, 84, 0.1) !important;
 }
 
 .alert-primary,
 .pagination .page-item .page-link:hover,
 ::selection {
-    background-color: rgba(199, 26, 47, 0.9);
+    background-color: rgba(71, 181, 84, 0.9);
 }
 
 .alert-primary .alert-link {
@@ -185,7 +185,7 @@
 }
 
 .pagination .page-item .page-link:hover {
-    border-color: rgba(199, 26, 47, 0.9);
+    border-color: rgba(71, 181, 84, 0.9);
 }
 
 a.text-primary:hover,
@@ -198,7 +198,7 @@ a.text-primary:focus {
 }
 
 .bg-overlay-gradient {
-    background-color: rgba(199, 26, 47, 0.6);
+    background-color: rgba(71, 181, 84, 0.6);
 }
 
 .bg-overlay-gradient2 {
@@ -210,11 +210,11 @@ a.text-primary:focus {
 }
 
 .features .image:before {
-    background: linear-gradient(45deg, transparent, rgba(199, 26, 47, 0.1));
+    background: linear-gradient(45deg, transparent, rgba(71, 181, 84, 0.1));
 }
 
 .features:hover .image:before {
-    background: rgba(199, 26, 47, 0.1);
+    background: rgba(71, 181, 84, 0.1);
 }
 
 .features .icon,
@@ -225,15 +225,15 @@ a.text-primary:focus {
 .saas-feature-shape-right:after,
 .social-feature-left:after,
 .social-feature-right:after {
-    background: rgba(199, 26, 47, 0.1);
+    background: rgba(71, 181, 84, 0.1);
 }
 
 .key-feature .icon {
-    background: linear-gradient(45deg, transparent, rgba(199, 26, 47, 0.15));
+    background: linear-gradient(45deg, transparent, rgba(71, 181, 84, 0.15));
 }
 
 .owl-theme .owl-dots .owl-dot span {
-    background: rgba(199, 26, 47, 0.5) !important;
+    background: rgba(71, 181, 84, 0.5) !important;
 }
 
 .play-icon i,
@@ -246,13 +246,13 @@ a.text-primary:focus {
 }
 
 .event-schedule .date .day {
-    background: rgba(199, 26, 47, 0.1);
-    box-shadow: 0px 0px 2px 0.25px rgba(199, 26, 47, 0.5);
+    background: rgba(71, 181, 84, 0.1);
+    box-shadow: 0px 0px 2px 0.25px rgba(71, 181, 84, 0.5);
 }
 
 .classic-app-image .bg-app-shape:after,
 .classic-saas-image .bg-saas-shape:after {
-    box-shadow: 0 0 40px rgba(199, 26, 47, 0.5);
+    box-shadow: 0 0 40px rgba(71, 181, 84, 0.5);
 }
 
 .app-feature-shape-right:after,
@@ -261,15 +261,15 @@ a.text-primary:focus {
 .saas-feature-shape-right:after,
 .social-feature-left:after,
 .social-feature-right:after {
-    box-shadow: 0 0 40px rgba(199, 26, 47, 0.1);
+    box-shadow: 0 0 40px rgba(71, 181, 84, 0.1);
 }
 
 .bg-circle-gradiant {
-    background: radial-gradient(circle at 50% 50%, rgba(199, 26, 47, 0.1) 0%, rgba(199, 26, 47, 0.1) 33.333%, rgba(199, 26, 47, 0.3) 33.333%, rgba(199, 26, 47, 0.3) 66.666%, rgba(199, 26, 47, 0.5) 66.666%, rgba(199, 26, 47, 0.5) 99.999%);
+    background: radial-gradient(circle at 50% 50%, rgba(71, 181, 84, 0.1) 0%, rgba(71, 181, 84, 0.1) 33.333%, rgba(71, 181, 84, 0.3) 33.333%, rgba(71, 181, 84, 0.3) 66.666%, rgba(71, 181, 84, 0.5) 66.666%, rgba(71, 181, 84, 0.5) 99.999%);
 }
 
 .home-wrapper:before {
-    background: linear-gradient(90deg, rgba(199, 26, 47, 0.3), transparent);
+    background: linear-gradient(90deg, rgba(71, 181, 84, 0.3), transparent);
 }
 
 .ribbon.ribbon-primary span:before {

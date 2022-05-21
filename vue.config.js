@@ -15,15 +15,15 @@ module.exports = {
             config.devtool = 'source-map';
         }
 
-        config.externals = {
-            // 排除一些包，不会打包进 vendor 中
-            // 左侧为我们在业务中引入的包名， 右侧为对应库提供给外部引用的名字
-            "vue": "Vue",
-            "vuex": "Vuex",
-            "axios": "axios",
-            "bootstrap-vue": "BootstrapVue",
-            "marked": "marked",
-        }
+        // config.externals = {
+        //     // 排除一些包，不会打包进 vendor 中
+        //     // 左侧为我们在业务中引入的包名， 右侧为对应库提供给外部引用的名字
+        //     "vue": "Vue",
+        //     "vuex": "Vuex",
+        //     "axios": "axios",
+        //     "bootstrap-vue": "BootstrapVue",
+        //     "marked": "marked",
+        // }
     },
     devServer: {
         overlay: {                                  // 让浏览器 overlay 同时显示警告和错误

@@ -1,6 +1,10 @@
 // 全局变量
 @import "_variables.scss";
 
+//Core files
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/src/index.scss';
+
 // 基本样式
 @import "basic/main.scss";                      // 默认采用 Light 风格
 @import "basic/color.scss";                     // 默认颜色

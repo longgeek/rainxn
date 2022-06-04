@@ -136,9 +136,27 @@ export default {
                         class="navigation-menu"
                         :class="{ 'nav-light': navLight === true }"
                     >
-                        <!-- li :class="{ active: $route.name == 'home'}">
+                        <li>
                             <router-link to="/" class="side-nav-link-ref">首页</router-link>
-                        </li -->
+                        </li>
+                        <li>
+                            <a href="/#arch" class="side-nav-link-ref">平台架构</a>
+                        </li>
+                        <li>
+                            <a href="/#community" class="side-nav-link-ref">加入社区</a>
+                        </li>
+                        <li>
+                            <a href="/#project" class="side-nav-link-ref">项目入驻</a>
+                        </li>
+                        <li>
+                            <a href="/#paper" class="side-nav-link-ref">研究报告</a>
+                        </li>
+                        <li>
+                            <a href="/#event" class="side-nav-link-ref">社区活动</a>
+                        </li>
+                        <li>
+                            <a href="/#about" class="side-nav-link-ref">关于我们</a>
+                        </li>
                         <!-- li class="has-submenu" :class="{ active: $route.name === 'home'}">
                             <router-link :to="homeUrl" class="side-nav-link-ref">关于我们</router-link>
                             <span class="menu-arrow"></span>
@@ -156,21 +174,6 @@ export default {
                                 <a href="/#we" class="side-nav-link-ref">我们是谁</a>
                               </li>
                             </ul>
-                        </li>
-                        <li :class="{
-                            active: $route.name == 'project' ||
-                                    $route.name == 'project-detail'
-                        }">
-                            <router-link to="/project" class="side-nav-link-ref">我们的项目</router-link>
-                        </li>
-                        <li :class="{ active: $route.name == 'information'}">
-                            <router-link to="/information" class="side-nav-link-ref">信息披露</router-link>
-                        </li>
-                        <li :class="{ active: $route.name == 'partner'}">
-                            <router-link to="/partner" class="side-nav-link-ref">合作伙伴</router-link>
-                        </li>
-                        <li :class="{ active: $route.name == 'contact'}">
-                            <router-link to="/contact" class="side-nav-link-ref">联系我们</router-link>
                         </li -->
                     </ul>
                 </div>

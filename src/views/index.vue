@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide, directive } from "vue-awesome-swiper";
 import { Carousel, Slide } from "vue-carousel";
 import { VueTyper } from "vue-typer";
 import Team from "@/components/team";
-import Features from "@/components/features";
 
 /**
  * Index-corporate component
@@ -98,24 +97,24 @@ export default {
             ],
             teamData: [
                 {
-                     image: "images/founder/1.jpeg",
+                     image: "images/founder/1.png",
                      name: "许麟济",
-                     designation: ["前新加坡建设局国际开发司司长"],
+                     designation: ["开放城市共同体发起人", "前新加坡建设局国际开发司司长"],
                 },
                 {
-                     image: "images/founder/2.jpeg",
+                     image: "images/founder/2.png",
                      name: "杜玉杰",
-                     designation: ["前OpenStack 基金会独立董事", "前开放原子开源基金会理事、秘书长", "华为鸿蒙开源操作系统前身 Huawei LiteOS 前生态负责人。"],
+                     designation: ["开放城市共同体发起人"],
                 },
                 {
                      image: "images/founder/3.png",
                      name: "高焕堂",
-                     designation: ["台湾铭传大学 AI课程教授", "亚太地区Android技术大会主席", "台湾Android领域框架开发联盟总架构师。"],
+                     designation: ["开放城市共同体发起人", "台湾AIC产业联盟主席"],
                 },
                 {
-                     image: "images/founder/4.jpeg",
+                     image: "images/founder/4.png",
                      name: "陈懿新",
-                     designation: ["前华为中央软件技术战略部部长", "煤油灯科技创始人"],
+                     designation: ["开放城市共同体发起人", "煤油灯科技创始人"],
                 },
             ],
             featuresData: [
@@ -123,19 +122,19 @@ export default {
                     icon: "uil uil-airplay",
                     title: "OCC 认可价值",
                     description:
-                      "Nisi aenean vulputate eleifend tellus vitae eleifend enim a Aliquam eleifend aenean elementum semper.",
+                      "OCC认可价值是通过知识的共伴效应来创造的，维基百科和开源社区就是其中的两个案例，在开源社区中，社区成员互相交流知识，从而产生并分配价值，创造共同体。社区成员而非劳动或资本才是这里的生产实体，通过他们的贡献促成价值创造的条件。在现有体系下，人们不能从开放和贡献的行动中谋生，所以，即便我们创造价值，因为它没有市场价值，也不会被系统认可。有大量知识不具有市场价值，这是当今的根本问题之一。",
                 },
                 {
                     icon: "uil uil-envelope-shield",
                     title: "平台合作主义",
                     description:
-                      "Allegedly, a Latin scholar established the origin of the established text by compiling unusual word.",
+                      "平台合作主义认为攫取式网络等级经济是资本主义的一种转变，从公劳动体系变为直接剥削他人的合作，Google、YouTube、Uber、Airbnb这些公司不再支付任何创建内容和服务的人费用，但从我们的交换系统中吸走价值。像Facebook有15亿人共同创造价值，但全部的市场价值被私有化俘获，即便有了一个基于共同体的高产的对等协作生产系统也无济于事，它的价值也是直接被网络等级平台俘获了。",
                 },
                 {
                     icon: "uil uil-edit-alt",
                     title: "开放协同",
                     description:
-                      "It seems that only fragments of the original text remain in only fragments the Lorem Ipsum texts used today.",
+                      "开放共同体有助于开放协同，人们为特定目的而创造共生的合作实体。作为一个共同体成员，创造了大量对大家都可用的事物，特别是以知识的形式。每个人都可以做出贡献，每个人都可以使用它。但为了可持续，必须建立能连接当前市场的合作平台，开放城市共同体应运而生。",
                 },
             ],
         };
@@ -145,7 +144,6 @@ export default {
         Slide,
         Swiper,
         Carousel,
-        Features,
         SwiperSlide,
         "vue-typer": VueTyper,
     },
@@ -528,8 +526,19 @@ export default {
               </div>
           </div>
           <div class="container mt-5 pt-5">
-            <Features :featuresData="featuresData" />
-
+            <div class="row">
+              <div class="col-12" v-for="(item, index) in featuresData" :key="index">
+                <div class="d-flex align-items-center pt-4">
+                  <h2 class="text-primary">
+                    <i :class="item.icon"></i>
+                  </h2>
+                  <div class="ml-5">
+                    <h5>{{ item.title }}</h5>
+                    <p class="text-muted mb-0">{{ item.description }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="container mt-100 mt-60">
                 <div class="rounded bg-primary p-lg-5 p-4">
                     <div class="row align-items-end">

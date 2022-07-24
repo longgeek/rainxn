@@ -10,6 +10,11 @@ const routes = [
         component: () => import('@/views/index')
     },
     {
+        path: '/occ-builder-detail',
+        name: 'occ-builder-detail',
+        component: () => import('@/views/occ-builder-detail')
+    },
+    {
         path: '*',
         name: 'error',
         component: () => import('@/views/error')

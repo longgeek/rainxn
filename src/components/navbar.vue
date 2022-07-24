@@ -140,22 +140,13 @@ export default {
                             <router-link to="/" class="side-nav-link-ref">首页</router-link>
                         </li>
                         <li>
-                            <a href="/#arch" class="side-nav-link-ref">平台架构</a>
+                            <a href="/#community" class="side-nav-link-ref">社区动态</a>
                         </li>
                         <li>
-                            <a href="/#community" class="side-nav-link-ref">加入社区</a>
+                            <a href="/#occ-builder" class="side-nav-link-ref">关于 OCC</a>
                         </li>
                         <li>
-                            <a href="/#project" class="side-nav-link-ref">项目入驻</a>
-                        </li>
-                        <li>
-                            <a href="/#paper" class="side-nav-link-ref">研究报告</a>
-                        </li>
-                        <li>
-                            <a href="/#event" class="side-nav-link-ref">社区活动</a>
-                        </li>
-                        <li>
-                            <a href="/#about" class="side-nav-link-ref">关于我们</a>
+                            <a href="/#join" class="side-nav-link-ref">加入 OCC</a>
                         </li>
                         <!-- li class="has-submenu" :class="{ active: $route.name === 'home'}">
                             <router-link :to="homeUrl" class="side-nav-link-ref">关于我们</router-link>

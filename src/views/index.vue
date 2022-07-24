@@ -2,6 +2,8 @@
 import { Swiper, SwiperSlide, directive } from "vue-awesome-swiper";
 import { Carousel, Slide } from "vue-carousel";
 import { VueTyper } from "vue-typer";
+import Team from "@/components/team";
+import Features from "@/components/features";
 
 /**
  * Index-corporate component
@@ -26,128 +28,124 @@ export default {
                     prevEl: ".swiper-button-prev",
                 },
             },
-            caseList: [
+            postList: [
                 {
-                    image: 'images/arch/1.jpeg',
-                    title: '开放源代码互动平台',
-                    desc: '构建开源技术研究、开发以及应用等各领域资深技术专家，为开源技术开发者提供集学、练、测于一体的优质内容和服务，为开发者提供丰富而专业的学习和产业服务机构；同时也通过收益激励方式，让更多内容创作者可持续地输出自己的知识。',
+                    image: 'images/post/1.png',
+                    title: '开源进化论——从市集到城市共同体',
+                    desc: '从市集到城市共同体，开源围绕着技术迭代、商业创新、产业升级、社会价值正加速进化进化。',
                     variant: 'primary',
-                    type: [
-                        'Network',
-                        'APP',
-                        'Community',
-                        'Code',
-                        'Code',
-                        'Academy',
-                        'Bank',
-                    ],
+                    type: [],
+                    link: "https://mp.weixin.qq.com/s/mpC4_lDCYL0GfHYP7097Cg",
                 },
                 {
-                    image: 'images/arch/2.jpeg',
-                    title: '开源产业赋能平台',
-                    desc: '持续、全面和深入地反映中国产业需求，以城市为基点，以开源技术和开放出版为核心服务，推动人工智能、大数据、下一代信息技术以及其他前沿技术在各产业的活化与赋能作用。',
+                    image: 'images/post/2.png',
+                    title: '面对新技术浪潮，我们准备做点事情——《OCC百人谈》发刊词',
+                    desc: '“OCC百人谈”将以文字为主要载体，配合视频、音频等多种形式，窥探并记录中国数字经济起步之初的一页真实。',
                     variant: 'primary',
-                    type: [
-                        'Thinktank',
-                        'Talk',
-                        'Bookshop',
-                    ],
+                    type: [],
+                    link: "https://mp.weixin.qq.com/s/6-vCqfXIJ3m1_6uju0KKGQ",
                 },
                 {
-                    image: 'images/arch/3.jpeg',
-                    title: '开放商业创新平台',
-                    desc: '开源技术与开源理念对传统商业有着深远的创新意义，Social Value 和 Business Value 是否能有机的结合？企业和社区能否互惠互利？开源如何继续推动突破性的商业创新？利用开源形成商业合力，大家既能各取所需，又能形成合力加快社会变革。',
+                    image: 'images/post/3.png',
+                    title: '线性资本王淮：效率升维，科技投资的底层逻辑',
+                    desc: '我们并不强调技术在科学层面上的前沿探索，做科技投资，我们一直关注的是它在工程落地层面的前沿性探索。',
                     variant: 'primary',
-                    type: [
-                        'Campus',
-                        'MBA',
-                        'College',
-                    ],
+                    type: [],
+                    link: "",
                 },
                 {
-                    image: 'images/arch/4.jpeg',
-                    title: '开放社会公益平台',
-                    desc: '开源一方面与开源软件等技术相关，包括开源软件历史、开源软件协议、技术产品、开源社区、相关硬件、技术人员、开源软件相关行业及企业等;另一方面也与开源价值观与方法论相关,包括开源价值观体系、开源方法论体系、以开源方法论开展的非技术性项目、相关非技术性组织、社区及人员等。开源，是人类社会的宝贵精神财富。',
+                    image: 'images/post/4.png',
+                    title: '开源会走向怎样的未来？',
+                    desc: '20 世纪八十年代初，麻省理工学院 AI 实验室获赠了一台新的激光打印机，能以更高的精度打印图形，并减少了 90％ 的打印时间，但经常会出现卡纸的情况。',
                     variant: 'primary',
-                    type: [
-                        'Society',
-                        'ValueChain',
-                        'Good',
-                    ],
+                    type: [],
+                    link: "",
                 },
             ],
-            companyList: [
-              {
-                logo: "images/job/Circleci.svg",
-                title: "Internet Services",
-                location: "San Francisco",
-                company: "circleci.com",
-                revenue: "$ 5M / Annual",
-                employee: 200,
-              },
-              {
-                logo: "images/job/Mg.svg",
-                title: "Mg",
-                location: "San Francisco",
-                company: "circleci.com",
-                revenue: "$ 5M / Annual",
-                employee: 200,
-              },
-              {
-                logo: "images/job/Twilio.svg",
-                title: "Twilio",
-                location: "San Francisco",
-                company: "circleci.com",
-                revenue: "$ 5M / Annual",
-                employee: 200,
-              },
-              {
-                logo: "images/job/Udemy.svg",
-                title: "Udemy",
-                location: "San Francisco",
-                company: "circleci.com",
-                revenue: "$ 5M / Annual",
-                employee: 200,
-              },
-              {
-                logo: "images/job/Webhooks.svg",
-                title: "Webhooks",
-                location: "San Francisco",
-                company: "circleci.com",
-                revenue: "$ 5M / Annual",
-                employee: 200,
-              },
-              {
-                logo: "images/job/Discord.svg",
-                title: "Discord",
-                location: "San Francisco",
-                company: "circleci.com",
-                revenue: "$ 5M / Annual",
-                employee: 200,
-              },
-              {
-                logo: "images/job/Eslint.svg",
-                title: "Eslint",
-                location: "San Francisco",
-                company: "circleci.com",
-                revenue: "$ 5M / Annual",
-                employee: 200,
-              },
-              {
-                logo: "images/job/Gitlab.svg",
-                title: "Gitlab",
-                location: "San Francisco",
-                company: "circleci.com",
-                revenue: "$ 5M / Annual",
-                employee: 200,
-              }
+            eventList: [
+                {
+                    image: 'images/event/1.png',
+                    title: '“开源大时代——开放、共生、可持续发展”OCC·TFASHION科技+发布会即将启动',
+                    desc: '7月25日14:00，为了进一步促进科技与时尚的跨界融合，促进跨界创意与创新的诞生，为城市发展赋能，开放城市共同体携手社区成员特别企划本次活动。',
+                    variant: 'primary',
+                    type: [],
+                    link: "",
+                },
+                {
+                    image: 'images/event/2.png',
+                    title: '“开源创业和商业化探索” 直播预告',
+                    desc: '7月22日晚6:30，由开放城市共同体发起人杜玉杰作为出品人的《开源创业和商业化探索》专场，将邀请到国内开源领域的资深代表，共同探讨开源和商业化背后那些不为人知的故事。',
+                    variant: 'primary',
+                    type: [],
+                    link: "https://mp.weixin.qq.com/s/ZL5HA_CcqXxQR4uL9XgjRg",
+                },
+                {
+                    image: 'images/event/3.png',
+                    title: '“谷歌创新冲刺分享沙龙”直播预告',
+                    desc: '7月20日晚8点，开放城市共同体特别筹划“谷歌创新冲刺分享沙龙”直播活动，如何摆脱创业发展过程的瓶颈问题，这里有一套完整的方法论。',
+                    variant: 'primary',
+                    type: [],
+                    link: "https://mp.weixin.qq.com/s/dluel-ncJfBStt9s1fASwQ",
+                },
+                {
+                    image: 'images/event/4.png',
+                    title: '“中国软件的创新新机遇在哪里？”主题直播预告',
+                    desc: '7月6日晚8点，开源和商业的结合是否可以加速中国公司的成长？从创新的角度来看，中国软件的创新机遇又在哪里呢？关于开源的各种，在这里都有答案。',
+                    variant: 'primary',
+                    type: [],
+                    link: "https://mp.weixin.qq.com/s/nFbwNF3t6yeDxke0EEPB9g",
+                },
+            ],
+            teamData: [
+                {
+                     image: "images/founder/1.jpeg",
+                     name: "许麟济",
+                     designation: ["前新加坡建设局国际开发司司长"],
+                },
+                {
+                     image: "images/founder/2.jpeg",
+                     name: "杜玉杰",
+                     designation: ["前OpenStack 基金会独立董事", "前开放原子开源基金会理事、秘书长", "华为鸿蒙开源操作系统前身 Huawei LiteOS 前生态负责人。"],
+                },
+                {
+                     image: "images/founder/3.png",
+                     name: "高焕堂",
+                     designation: ["台湾铭传大学 AI课程教授", "亚太地区Android技术大会主席", "台湾Android领域框架开发联盟总架构师。"],
+                },
+                {
+                     image: "images/founder/4.jpeg",
+                     name: "陈懿新",
+                     designation: ["前华为中央软件技术战略部部长", "煤油灯科技创始人"],
+                },
+            ],
+            featuresData: [
+                {
+                    icon: "uil uil-airplay",
+                    title: "OCC 认可价值",
+                    description:
+                      "Nisi aenean vulputate eleifend tellus vitae eleifend enim a Aliquam eleifend aenean elementum semper.",
+                },
+                {
+                    icon: "uil uil-envelope-shield",
+                    title: "平台合作主义",
+                    description:
+                      "Allegedly, a Latin scholar established the origin of the established text by compiling unusual word.",
+                },
+                {
+                    icon: "uil uil-edit-alt",
+                    title: "开放协同",
+                    description:
+                      "It seems that only fragments of the original text remain in only fragments the Lorem Ipsum texts used today.",
+                },
             ],
         };
     },
     components: {
+        Team,
         Slide,
         Swiper,
         Carousel,
+        Features,
         SwiperSlide,
         "vue-typer": VueTyper,
     },
@@ -278,37 +276,32 @@ export default {
             </div>
         </swiper>
 
-        <section class="section" id="arch">
+        <section class="section" id="community">
             <div class="container">
                 <div class="row align-items-center mb-4 pb-2">
                     <div class="col-lg-6">
                         <div class="section-title text-center text-lg-left">
                             <h4 class="title mb-4 mb-lg-0">
-                                平台架构
+                                社区动态-文章
                             </h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="section-title text-center text-lg-left">
-                            <p class="text-muted mb-0 mx-auto para-desc">
-                                开放城市共同体的
-                                <span class="text-primary font-weight-bold">平台架构</span>，是通过热爱开源技术和开源文化的共建者一起协作创新，共同构建的可持续发展的生态体系。
-                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="row projects-wrapper">
-                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 business" v-for="(item, index) in caseList" :key="index">
-                        <div class="card blog border-0 work-container work-classic shadow rounded-md overflow-hidden" style="height: 520px;">
+                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2 business" v-for="(item, index) in postList" :key="index">
+                        <div class="card blog border-0 work-container work-classic shadow rounded-md overflow-hidden" style="height: 350px;">
                             <img :src="item.image" class="img-fluid work-image" alt="" style="height: 170px">
                             <div class="card-body">
                                 <div class="content">
+                                    <div v-if="item.type.length">
                                         OpenCity
                                         <vue-typer
                                             :text="item.type"
                                         ></vue-typer>
+                                    </div>
                                     <h5 class="mt-3">
-                                        <router-link to="/page-case-detail" class="text-dark title">{{item.title}}</router-link>
+                                        <div href="" class="text-dark title" v-if="!item.link">{{item.title}}</div>
+                                        <a :href="item.link" class="text-dark title" v-else target="_blank">{{item.title}}</a>
                                     </h5>
                                     <p class="text-muted">{{ item.desc }}</p>
                                 </div>
@@ -317,1325 +310,253 @@ export default {
                     </div>
                 </div>
             </div>
-
-            <!-- div class="container mt-100 mt-60">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <div class="mr-lg-5">
-                            <img
-                                src="images/1.jpg"
-                                class="img-fluid"
-                                alt=""
-                            />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="container">
+                <div class="row align-items-center mb-4 pb-2">
+                    <div class="col-lg-6">
+                        <div class="section-title text-center text-lg-left">
+                            <h4 class="title mb-4 mb-lg-0">
+                                社区动态-活动
+                            </h4>
                         </div>
                     </div>
-                    <div class="col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
-                        <div class="section-title">
-                            <h4 class="title mb-4">
-                                项目入驻
-                            </h4>
-                            <p class="text-muted">
-                                    如果你有关于城市可持续发展的创意或项目，希望通过OpenCity开放城市共同体，以开源、开放的方式孵化与加速，欢迎扫码提交项目信息，我们将以最快速度联系您。
-                            </p>
-                            <div class="mt-4">
-                                <a
-                                    href="javascript:void(0)"
-                                    class="btn btn-pills btn-soft-primary"
-                                    v-b-modal.modal-project
-                                    >立即加入</a
-                                >
+                </div>
+                <div class="row projects-wrapper">
+                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2 business" v-for="(item, index) in eventList" :key="index">
+                        <div class="card blog border-0 work-container work-classic shadow rounded-md overflow-hidden" style="height: 350px;">
+                            <img :src="item.image" class="img-fluid work-image" alt="" style="height: 170px">
+                            <div class="card-body">
+                                <div class="content">
+                                    <div v-if="item.type.length">
+                                        OpenCity
+                                        <vue-typer
+                                            :text="item.type"
+                                        ></vue-typer>
+                                    </div>
+                                    <h5 class="mt-3">
+                                        <div href="" class="text-dark title" v-if="!item.link">{{item.title}}</div>
+                                        <a :href="item.link" class="text-dark title" v-else target="_blank">{{item.title}}</a>
+                                    </h5>
+                                    <p class="text-muted">{{ item.desc }}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="container mt-100 mt-60">
-                <div class="row align-items-center">
-                    <div class="col-md-6 order-1 order-md-2">
-                        <div class="ml-lg-5">
-                            <img
-                                src="images/2.jpg"
-                                class="img-fluid"
-                                alt=""
-                            />
-                        </div>
-                    </div>
-                    <div class="col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 pt-sm-0">
-                        <div class="section-title">
-                            <h4 class="title mb-4">
-                                项目共创
-                            </h4>
-                            <p class="text-muted">
-                                如果您愿意以开源开放、协作共享的方式加速项目的成熟与落地，欢迎加入我们，成为项目共创者。
-                            </p>
-                            <div class="mt-4">
-                                <a
-                                    href="javascript:void(0)"
-                                    class="btn btn-pills btn-soft-primary"
-                                    v-b-modal.modal-co-creator
-                                    >立即加入</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container mt-100 mt-60">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <div class="mr-lg-5">
-                            <img
-                                src="images/3.jpg"
-                                class="img-fluid"
-                                alt=""
-                            />
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
-                        <div class="section-title">
-                            <h4 class="title mb-4">
-                                志愿服务
-                            </h4>
-                            <p class="text-muted">
-                                不管您是程序员、产品经理、媒体从业者、律师、知识产权从业者、财务从业者，亦或只是一个普通的老百姓，只要您愿意参入到OpenCity的使命中来，志愿服务团队欢迎您的加入。
-                            </p>
-                            <div class="mt-4">
-                                <a
-                                    href="javascript:void(0)"
-                                    class="btn btn-pills btn-soft-primary"
-                                    v-b-modal.modal-volunteer
-                                    >立即加入</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div -->
         </section>
 
-        <section class="section bg-light" id="community">
+        <section class="section border-top" id="occ-builder">
           <div class="container">
               <div class="row align-items-center mb-4 pb-2">
                   <div class="col-lg-6">
                       <div class="section-title text-center text-lg-left">
                           <h4 class="title mb-4 mb-lg-0">
-                            加入社区
+                            OCC 项目创建者行动攻略
                           </h4>
                       </div>
                   </div>
-                  <div class="col-lg-6">
-                      <div class="section-title text-center text-lg-left">
-                          <p class="text-muted mb-0 mx-auto para-desc">
-                              开放城市共同体的
-                              <span class="text-primary font-weight-bold">平台架构</span>，是通过热爱开源技术和开源文化的共建者一起协作创新，共同构建的可持续发展的生态体系。
-                          </p>
-                      </div>
-                  </div>
               </div>
           </div>
-          <br />
-          <br />
           <div class="container">
               <div class="row align-items-center">
-                  <div class="col-lg-6">
-                      <div class="section-title text-center text-lg-left">
-                          <h5 class="text-primary">1. 个人会员</h5>
-                          <a href="javascript:void(0)" class="btn btn-sm btn-primary mt-2 mr-2">个人会员加入申请</a>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-6">
-                      <div class="section-title text-center text-lg-left">
-                          <p class="text-muted mb-0 mx-auto para-desc">OCC 个人会员拥有</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row justify-content-center">
-                  <div class="col-lg-2 col-md-2 col-6 text-center pt-5">
-                      <img src="images/client/amazon.svg" class="avatar avatar-ex-sm" alt="">
-                  </div>
-
-                  <div class="col-lg-2 col-md-2 col-6 text-center pt-5">
-                      <img src="images/client/google.svg" class="avatar avatar-ex-sm" alt="">
-                  </div>
-
-                  <div class="col-lg-2 col-md-2 col-6 text-center pt-5">
-                      <img src="images/client/lenovo.svg" class="avatar avatar-ex-sm" alt="">
-                  </div>
-
-                  <div class="col-lg-2 col-md-2 col-6 text-center pt-5">
-                      <img src="images/client/paypal.svg" class="avatar avatar-ex-sm" alt="">
-                  </div>
-
-                  <div class="col-lg-2 col-md-2 col-6 text-center pt-5">
-                      <img src="images/client/shopify.svg" class="avatar avatar-ex-sm" alt="">
-                  </div>
-
-                  <div class="col-lg-2 col-md-2 col-6 text-center pt-5">
-                      <img src="images/client/spotify.svg" class="avatar avatar-ex-sm" alt="">
-                  </div>
-              </div>
-          </div>
-          <br />
-          <br />
-          <hr />
-          <br />
-          <br />
-          <div class="container">
-              <div class="row align-items-center">
-                  <div class="col-lg-6">
-                      <div class="section-title text-center text-lg-left">
-                          <h5 class="text-primary">2. 企业会员</h5>
-                          <a href="javascript:void(0)" class="btn btn-sm btn-primary mt-2 mr-2">企业会员加入申请</a>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-6">
-                      <div class="section-title text-center text-lg-left">
-                          <p class="text-muted mb-0 mx-auto para-desc">OCC 企业会员拥有</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row justify-content-center">
-                  <div class="col-lg-2 col-md-2 col-6 text-center pt-5">
-                      <img src="images/client/amazon.svg" class="avatar avatar-ex-sm" alt="">
-                  </div>
-
-                  <div class="col-lg-2 col-md-2 col-6 text-center pt-5">
-                      <img src="images/client/google.svg" class="avatar avatar-ex-sm" alt="">
-                  </div>
-
-                  <div class="col-lg-2 col-md-2 col-6 text-center pt-5">
-                      <img src="images/client/lenovo.svg" class="avatar avatar-ex-sm" alt="">
-                  </div>
-
-                  <div class="col-lg-2 col-md-2 col-6 text-center pt-5">
-                      <img src="images/client/paypal.svg" class="avatar avatar-ex-sm" alt="">
-                  </div>
-
-                  <div class="col-lg-2 col-md-2 col-6 text-center pt-5">
-                      <img src="images/client/shopify.svg" class="avatar avatar-ex-sm" alt="">
-                  </div>
-
-                  <div class="col-lg-2 col-md-2 col-6 text-center pt-5">
-                      <img src="images/client/spotify.svg" class="avatar avatar-ex-sm" alt="">
-                  </div>
-              </div>
-          </div>
-          <br />
-          <br />
-          <hr />
-          <br />
-          <br />
-          <div class="container">
-              <div class="row align-items-center">
-                  <div class="col-lg-6">
-                      <div class="section-title text-center text-lg-left">
-                          <h5 class="text-primary">3. 志愿者会员</h5>
-                          <a href="javascript:void(0)" class="btn btn-sm btn-primary mt-2 mr-2">志愿者加入申请</a>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-6">
-                      <div class="section-title text-center text-lg-left">
-                          <p class="text-muted mb-0 mx-auto para-desc">OCC 志愿者会员拥有</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row justify-content-center">
-                  <div class="col-lg-2 col-md-2 col-6 text-center pt-5">
-                      <img src="images/client/amazon.svg" class="avatar avatar-ex-sm" alt="">
-                  </div>
-
-                  <div class="col-lg-2 col-md-2 col-6 text-center pt-5">
-                      <img src="images/client/google.svg" class="avatar avatar-ex-sm" alt="">
-                  </div>
-
-                  <div class="col-lg-2 col-md-2 col-6 text-center pt-5">
-                      <img src="images/client/lenovo.svg" class="avatar avatar-ex-sm" alt="">
-                  </div>
-
-                  <div class="col-lg-2 col-md-2 col-6 text-center pt-5">
-                      <img src="images/client/paypal.svg" class="avatar avatar-ex-sm" alt="">
-                  </div>
-
-                  <div class="col-lg-2 col-md-2 col-6 text-center pt-5">
-                      <img src="images/client/shopify.svg" class="avatar avatar-ex-sm" alt="">
-                  </div>
-
-                  <div class="col-lg-2 col-md-2 col-6 text-center pt-5">
-                      <img src="images/client/spotify.svg" class="avatar avatar-ex-sm" alt="">
-                  </div>
-              </div>
-          </div>
-
-          <div class="container mt-100 mt-60">
-              <div class="row align-items-center">
-                  <div class="col-md-6">
-                      <div class="section-title text-md-left text-center">
-                          <h5 class="mb-4">社区行为准则</h5>
-                          <p class="text-muted mb-0 para-desc">Start working with <span class="text-primary font-weight-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
-
-                          <ul class="list-unstyled text-muted mt-4 mb-0">
-                              <li class="mb-0"><span class="text-primary h5 mr-2"><i class="uil uil-check-circle align-middle"></i></span>Digital Marketing Solutions for Tomorrow</li>
-                              <li class="mb-0"><span class="text-primary h5 mr-2"><i class="uil uil-check-circle align-middle"></i></span>Our Talented & Experienced Marketing Agency</li>
-                              <li class="mb-0"><span class="text-primary h5 mr-2"><i class="uil uil-check-circle align-middle"></i></span>Create your own skin to match your brand</li>
-                          </ul>
-                      </div>
-                  </div>
-
-                  <div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                      <div class="faq-content">
+                  <div class="col-lg-7 col-md-6">
+                      <div class="faq-content mr-lg-5">
                           <div class="accordion" id="accordionExampleone">
-                              <b-card no-body class="mb-2 rounded border-bottom">
+                              <b-card no-body class="mb-2 border-0 rounded">
                                   <b-card-header class="border-0 bg-light p-3 pr-5">
-                                      <a class="faq position-relative text-dark" v-b-toggle.accordion-1 href="javascript: void(0);">
-                                          <h6 class="title mb-0"> How our <span class="text-primary">Landrick</span> work ? </h6>
+                                      <a
+                                          class="faq position-relative text-dark"
+                                          v-b-toggle.accordion-1
+                                          href="javascript: void(0);"
+                                      >
+                                          <h6 class="title mb-0">
+                                              如何 “正确” 营造开放<span class="text-primary">共同体</span>?
+                                          </h6>
                                       </a>
                                   </b-card-header>
-                                  <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
+                                  <b-collapse
+                                      id="accordion-1"
+                                      visible
+                                      accordion="my-accordion"
+                                      role="tabpanel"
+                                  >
                                       <b-card-body class="px-2 py-4">
-                                          <p class="text-muted mb-0 faq-ans">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                          <p class="text-muted mb-0 faq-ans">
+                                            我们详细阐述了“OCC项目创建者行动攻略”，以帮助你可以拥有一个实际可操作的计划，而不仅仅只是拥有一个好的创意或想法。
+                                          </p>
                                       </b-card-body>
                                   </b-collapse>
                               </b-card>
-                              <b-card no-body class="mb-2 rounded border-bottom">
+                              <b-card no-body class="mb-2 border-0 rounded">
                                   <b-card-header class="border-0 bg-light p-3 pr-5">
-                                      <a class="faq position-relative text-dark" v-b-toggle.accordion-2 href="javascript: void(0);">
-                                          <h6 class="title mb-0"> What is the main process open account ?</h6>
+                                      <a
+                                          class="faq position-relative text-dark"
+                                          v-b-toggle.accordion-2
+                                          href="javascript: void(0);"
+                                      >
+                                          <h6 class="title mb-0">
+                                            项目设计及执行人
+                                          </h6>
                                       </a>
                                   </b-card-header>
-                                  <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
+                                  <b-collapse
+                                      id="accordion-2"
+                                      accordion="my-accordion"
+                                      role="tabpanel"
+                                  >
                                       <b-card-body class="px-2 py-4">
-                                          <p class="text-muted mb-0 faq-ans">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                          <p class="text-muted mb-0 faq-ans">
+                                            项目建议与资源：具体方法如下，我们把工具、信息和补充资源集中起来，方便大家从零开始规划和实施一个能够产生社会效益的项目。
+                                            <br />
+                                            <br />
+                                            共管计划：你最终将拟定自己的项目规划。简单来说，就是你提出想法，我们帮你落实细节。准备好了吗？
+                                          </p>
                                       </b-card-body>
                                   </b-collapse>
                               </b-card>
-                              <b-card no-body class="mb-2 rounded border-bottom">
+                              <b-card no-body class="mb-2 border-0 rounded">
                                   <b-card-header class="border-0 bg-light p-3 pr-5">
-                                      <a class="faq position-relative text-dark" v-b-toggle.accordion-3 href="javascript: void(0);">
-                                          <h6 class="title mb-0"> How to make unlimited data entry ? </h6>
+                                      <a
+                                          class="faq position-relative text-dark"
+                                          v-b-toggle.accordion-3
+                                          href="javascript: void(0);"
+                                      >
+                                          <h6 class="title mb-0">
+                                              开始你的项目
+                                          </h6>
                                       </a>
                                   </b-card-header>
-                                  <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+                                  <b-collapse
+                                      id="accordion-3"
+                                      accordion="my-accordion"
+                                      role="tabpanel"
+                                  >
                                       <b-card-body class="px-2 py-4">
-                                          <p class="text-muted mb-0 faq-ans">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                          <p class="text-muted mb-0 faq-ans">
+                                            什么是“项目”：项目，是以实现某一具体成果为目的的短期工作或一系列活动。项目得到的资源有限，往往会有固定期限，因而有明确的起止时间。
+                                          </p>
                                       </b-card-body>
                                   </b-collapse>
                               </b-card>
 
-                              <b-card no-body class="mb-2 rounded border-bottom">
+                              <b-card no-body class="mb-2 border-0 rounded">
                                   <b-card-header class="border-0 bg-light p-3 pr-5">
-                                      <a class="faq position-relative text-dark" v-b-toggle.accordion-4 href="javascript: void(0);">
-                                          <h6 class="title mb-0"> Is <span class="text-primary">Landrick</span> safer to use with my account ? </h6>
+                                      <a
+                                          class="faq position-relative text-dark"
+                                          v-b-toggle.accordion-4
+                                          href="javascript: void(0);"
+                                      >
+                                          <h6 class="title mb-0">
+                                            “OCC项目创建者行动攻略” 是如何运行的？
+                                          </h6>
                                       </a>
                                   </b-card-header>
-                                  <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
+                                  <b-collapse
+                                      id="accordion-4"
+                                      accordion="my-accordion"
+                                      role="tabpanel"
+                                  >
                                       <b-card-body class="px-2 py-4">
-                                          <p class="text-muted mb-0 faq-ans">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-                                      </b-card-body>
-                                  </b-collapse>
-                              </b-card>
-
-                              <b-card no-body class="mb-2 rounded border-bottom">
-                                  <b-card-header class="border-0 bg-light p-3 pr-5">
-                                      <a class="faq position-relative text-dark" v-b-toggle.accordion-5 href="javascript: void(0);">
-                                          <h6 class="title mb-0"> How can i contact your technical team ? </h6>
-                                      </a>
-                                  </b-card-header>
-                                  <b-collapse id="accordion-5" accordion="my-accordion" role="tabpanel">
-                                      <b-card-body class="px-2 py-4">
-                                          <p class="text-muted mb-0 faq-ans">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                          <p class="text-muted mb-0 faq-ans">
+                                            “OCC项目创建者”有六个部分涵盖整个项目周期，涉及到整个项目的各个不同阶段。各部分除了介绍基础知识，还附有一系列指导意见和思考问题，以便于实践。在每一阶段结束时均提供多种资源、工具和指南的链接，帮助大家进一步思考。
+                                          </p>
                                       </b-card-body>
                                   </b-collapse>
                               </b-card>
                           </div>
                       </div>
                   </div>
-              </div>
+                  <!--end col-->
 
+                  <div class="col-lg-5 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                      <img src="images/faq.svg" alt="" />
+                  </div>
+                  <!--end col-->
+              </div>
           </div>
+
+          <!-- div class="container mt-100 mt-60">
+              <div class="row justify-content-center">
+                  <div class="col-12 text-center">
+                      <div class="section-title">
+                          <div class="watch-video mt-4 pt-2">
+                              <a
+                                  href="/occ-builder-detail"
+                                  target="_blank"
+                                  class="btn btn-primary mb-2"
+                              >
+                                  查看更多
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div -->
         </section>
 
-        <section class="section" id="project">
+        <section class="section border-top">
           <div class="container">
               <div class="row align-items-center mb-4 pb-2">
                   <div class="col-lg-6">
                       <div class="section-title text-center text-lg-left">
                           <h4 class="title mb-4 mb-lg-0">
-                              项目入驻
+                              OCC 发起人介绍
                           </h4>
                       </div>
                   </div>
+              </div>
+          </div>
+          <div class="container mt-5 pt-5">
+            <Team :team-data="teamData" />
+          </div>
+        </section>
+
+        <section class="section border-top" id="join">
+          <div class="container">
+              <div class="row align-items-center mb-4 pb-2">
                   <div class="col-lg-6">
                       <div class="section-title text-center text-lg-left">
-                          <p class="text-muted mb-0 mx-auto para-desc">
-                              OCC
-                              <span class="text-primary font-weight-bold">社区活动</span>
-                              旨在洞察未来
-                          </p>
+                          <h4 class="title mb-4 mb-lg-0">
+                              加入 OCC
+                          </h4>
                       </div>
                   </div>
               </div>
           </div>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-12">
-                <carousel
-                  id="six-slide"
-                  class="owl-carousel owl-theme"
-                  dir="ltr"
-                  :per-page="6"
-                  :loop="true"
-                  :autoplay="true"
-                >
-                  <Slide v-for="(data, index) of companyList" :key="index" class="mx-3">
-                    <div class="mt-4 pt-2">
-                      <div class="company-list card border-0 rounded shadow bg-white">
-                        <div class="text-center py-5 border-bottom">
-                          <img
-                            :src="data.logo"
-                            class="avatar avatar-small mx-auto rounded-circle d-block mb-3"
-                            alt=""
-                          />
-                          <router-link to="/page-job-company" class="text-dark h5 name"
-                            >{{data.title}}</router-link
-                          >
-                          <p class="text-muted mt-1 mb-0">Internet Services</p>
-                        </div>
-
-                        <div class="p-4">
-                          <h6>项目进展:</h6>
-                          <ul class="list-unstyled mb-4">
-                            <li class="h6">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-map-pin fea icon-sm text-warning mr-2"
-                              >
-                                <path
-                                  d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
-                                ></path>
-                                <circle cx="12" cy="10" r="3"></circle></svg
-                              ><span class="text-muted">Location :</span> {{data.location}}
-                            </li>
-                            <li class="h6">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-link fea icon-sm text-warning mr-2"
-                              >
-                                <path
-                                  d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
-                                ></path>
-                                <path
-                                  d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
-                                ></path></svg
-                              ><span class="text-muted">Comapny :</span> {{data.company}}
-                            </li>
-                            <li class="h6">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-dollar-sign fea icon-sm text-warning mr-2"
-                              >
-                                <line x1="12" y1="1" x2="12" y2="23"></line>
-                                <path
-                                  d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
-                                ></path></svg
-                              ><span class="text-muted">Revenue :</span> {{data.revenue}}
-                            </li>
-                            <li class="h6">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-users fea icon-sm text-warning mr-2"
-                              >
-                                <path
-                                  d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
-                                ></path>
-                                <circle cx="9" cy="7" r="4"></circle>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg
-                              ><span class="text-muted">No. of employees :</span> {{data.employee}}
-                            </li>
-                          </ul>
-                          <div class="progress-box mt-4 mb-4">
-                            <div class="text-muted">进度</div>
-                            <div class="progress">
-                              <div
-                                class="progress-bar position-relative bg-primary"
-                                style="width: 84%"
-                              >
-                                <div class="progress-value d-block text-muted h6">84%</div>
-                              </div>
-                            </div>
-                          </div>
-                          <router-link tag="a"
-                            to="/page-job-company"
-                            class="btn btn-block btn-soft-primary"
-                            >申请入驻
-                            <arrow-right-icon class="fea icon-sm"></arrow-right-icon></router-link>
-                        </div>
-                      </div>
-                    </div>
-                  </slide>
-                </carousel>
-              </div>
-            </div>
-          </div>
-
-          <div class="container pb-lg-4 mb-md-5 mb-4 mt-100 mt-60">
-            <div class="row justify-content-center">
-              <div class="col-12 text-center">
-                <div class="section-title">
-                  <p class="text-muted para-desc mx-auto mb-0">
-                    没有找到您关注的项目，可点击下方按钮发起新的项目
-                  </p>
-
-                  <div class="mt-4">
-                    <a href="javascript:void(0)" class="btn btn-primary mt-2 mr-2">发起项目</a>
-                    <a
-                      href="javascript:void(0)"
-                      class="btn btn-outline-primary mt-2"
-                      >查看项目发起准则</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section bg-light" id="paper">
-            <div class="container">
-                <div class="row align-items-center mb-4 pb-2">
-                    <div class="col-lg-6">
-                        <div class="section-title text-center text-lg-left">
-                            <h4 class="title mb-4 mb-lg-0">
-                                研究报告
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="section-title text-center text-lg-left">
-                            <p class="text-muted mb-0 mx-auto para-desc">
-                                OCC
-                                <span class="text-primary font-weight-bold">社区活动</span>
-                                旨在洞察未来
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div class="container mt-5 pt-5">
+            <Features :featuresData="featuresData" />
 
             <div class="container mt-100 mt-60">
-              <div class="row justify-content-center">
-                <div class="col-12">
-                  <div class="section-title text-center mb-4 pb-2">
-                    <h5 class="mb-4">研究报告/白皮书</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-12 mt-4 pt-2">
-                  <carousel
-                    id="six-slide"
-                    class="owl-carousel owl-theme"
-                    dir="ltr"
-                    :per-page="8"
-                    :loop="true"
-                    :autoplay="true"
-                  >
-                    <Slide>
-                      <div class="card border-0 work-container work-grid position-relative d-block overflow-hidden mx-3">
-                        <div class="card-body p-0">
-                          <a
-                            class="mfp-image d-inline-block"
-                            href="images/book/1.jpg"
-                            title=""
-                          >
-                            <img
-                              src="images/book/1.jpg"
-                              class="img-fluid shadow rounded"
-                              alt="work-image"
-                            />
-                          </a>
-                          <div class="content bg-white p-3">
-                            <h5 class="mb-0">
-                              <a href="javascript:void(0)" class="text-dark title"
-                                >Iphone mockup</a
-                              >
-                            </h5>
-                            <h6 class="text-muted tag mb-0">$ 16</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </Slide>
-                    <Slide>
-                      <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden mx-3"
-                      >
-                        <div class="card-body p-0">
-                          <a
-                            class="mfp-image d-inline-block"
-                            href="images/book/2.jpg"
-                            title=""
-                          >
-                            <img
-                              src="images/book/2.jpg"
-                              class="img-fluid shadow rounded"
-                              alt="work-image"
-                            />
-                          </a>
-                          <div class="content bg-white p-3">
-                            <h5 class="mb-0">
-                              <a href="javascript:void(0)" class="text-dark title"
-                                >Iphone mockup</a
-                              >
-                            </h5>
-                            <h6 class="text-muted tag mb-0">$ 16</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </Slide>
-                    <Slide>
-                      <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden mx-3"
-                      >
-                        <div class="card-body p-0">
-                          <a
-                            class="mfp-image d-inline-block"
-                            href="images/book/3.jpg"
-                            title=""
-                          >
-                            <img
-                              src="images/book/3.jpg"
-                              class="img-fluid shadow rounded"
-                              alt="work-image"
-                            />
-                          </a>
-                          <div class="content bg-white p-3">
-                            <h5 class="mb-0">
-                              <a href="javascript:void(0)" class="text-dark title"
-                                >Iphone mockup</a
-                              >
-                            </h5>
-                            <h6 class="text-muted tag mb-0">$ 16</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </Slide>
-                    <Slide>
-                      <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden mx-3"
-                      >
-                        <div class="card-body p-0">
-                          <a
-                            class="mfp-image d-inline-block"
-                            href="images/book/4.jpg"
-                            title=""
-                          >
-                            <img
-                              src="images/book/4.jpg"
-                              class="img-fluid shadow rounded"
-                              alt="work-image"
-                            />
-                          </a>
-                          <div class="content bg-white p-3">
-                            <h5 class="mb-0">
-                              <a href="javascript:void(0)" class="text-dark title"
-                                >Iphone mockup</a
-                              >
-                            </h5>
-                            <h6 class="text-muted tag mb-0">$ 16</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </Slide>
-                    <Slide>
-                      <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden mx-3"
-                      >
-                        <div class="card-body p-0">
-                          <a
-                            class="mfp-image d-inline-block"
-                            href="images/book/5.jpg"
-                            title=""
-                          >
-                            <img
-                              src="images/book/5.jpg"
-                              class="img-fluid shadow rounded"
-                              alt="work-image"
-                            />
-                          </a>
-                          <div class="content bg-white p-3">
-                            <h5 class="mb-0">
-                              <a href="javascript:void(0)" class="text-dark title"
-                                >Iphone mockup</a
-                              >
-                            </h5>
-                            <h6 class="text-muted tag mb-0">$ 16</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </Slide>
-                    <Slide>
-                      <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden mx-3"
-                      >
-                        <div class="card-body p-0">
-                          <a
-                            class="mfp-image d-inline-block"
-                            href="images/book/6.jpg"
-                            title=""
-                          >
-                            <img
-                              src="images/book/6.jpg"
-                              class="img-fluid shadow rounded"
-                              alt="work-image"
-                            />
-                          </a>
-                          <div class="content bg-white p-3">
-                            <h5 class="mb-0">
-                              <a href="javascript:void(0)" class="text-dark title"
-                                >Iphone mockup</a
-                              >
-                            </h5>
-                            <h6 class="text-muted tag mb-0">$ 16</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </Slide>
-
-                    <Slide>
-                      <div class="card border-0 work-container work-grid position-relative d-block overflow-hidden mx-3">
-                        <div class="card-body p-0">
-                          <a
-                            class="mfp-image d-inline-block"
-                            href="images/book/1.jpg"
-                            title=""
-                          >
-                            <img
-                              src="images/book/1.jpg"
-                              class="img-fluid shadow rounded"
-                              alt="work-image"
-                            />
-                          </a>
-                          <div class="content bg-white p-3">
-                            <h5 class="mb-0">
-                              <a href="javascript:void(0)" class="text-dark title"
-                                >Iphone mockup</a
-                              >
-                            </h5>
-                            <h6 class="text-muted tag mb-0">$ 16</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </Slide>
-                    <Slide>
-                      <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden mx-3"
-                      >
-                        <div class="card-body p-0">
-                          <a
-                            class="mfp-image d-inline-block"
-                            href="images/book/2.jpg"
-                            title=""
-                          >
-                            <img
-                              src="images/book/2.jpg"
-                              class="img-fluid shadow rounded"
-                              alt="work-image"
-                            />
-                          </a>
-                          <div class="content bg-white p-3">
-                            <h5 class="mb-0">
-                              <a href="javascript:void(0)" class="text-dark title"
-                                >Iphone mockup</a
-                              >
-                            </h5>
-                            <h6 class="text-muted tag mb-0">$ 16</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </Slide>
-                    <Slide>
-                      <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden mx-3"
-                      >
-                        <div class="card-body p-0">
-                          <a
-                            class="mfp-image d-inline-block"
-                            href="images/book/3.jpg"
-                            title=""
-                          >
-                            <img
-                              src="images/book/3.jpg"
-                              class="img-fluid shadow rounded"
-                              alt="work-image"
-                            />
-                          </a>
-                          <div class="content bg-white p-3">
-                            <h5 class="mb-0">
-                              <a href="javascript:void(0)" class="text-dark title"
-                                >Iphone mockup</a
-                              >
-                            </h5>
-                            <h6 class="text-muted tag mb-0">$ 16</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </Slide>
-                    <Slide>
-                      <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden mx-3"
-                      >
-                        <div class="card-body p-0">
-                          <a
-                            class="mfp-image d-inline-block"
-                            href="images/book/4.jpg"
-                            title=""
-                          >
-                            <img
-                              src="images/book/4.jpg"
-                              class="img-fluid shadow rounded"
-                              alt="work-image"
-                            />
-                          </a>
-                          <div class="content bg-white p-3">
-                            <h5 class="mb-0">
-                              <a href="javascript:void(0)" class="text-dark title"
-                                >Iphone mockup</a
-                              >
-                            </h5>
-                            <h6 class="text-muted tag mb-0">$ 16</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </Slide>
-                    <Slide>
-                      <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden mx-3"
-                      >
-                        <div class="card-body p-0">
-                          <a
-                            class="mfp-image d-inline-block"
-                            href="images/book/5.jpg"
-                            title=""
-                          >
-                            <img
-                              src="images/book/5.jpg"
-                              class="img-fluid shadow rounded"
-                              alt="work-image"
-                            />
-                          </a>
-                          <div class="content bg-white p-3">
-                            <h5 class="mb-0">
-                              <a href="javascript:void(0)" class="text-dark title"
-                                >Iphone mockup</a
-                              >
-                            </h5>
-                            <h6 class="text-muted tag mb-0">$ 16</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </Slide>
-                    <Slide>
-                      <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden mx-3"
-                      >
-                        <div class="card-body p-0">
-                          <a
-                            class="mfp-image d-inline-block"
-                            href="images/book/6.jpg"
-                            title=""
-                          >
-                            <img
-                              src="images/book/6.jpg"
-                              class="img-fluid shadow rounded"
-                              alt="work-image"
-                            />
-                          </a>
-                          <div class="content bg-white p-3">
-                            <h5 class="mb-0">
-                              <a href="javascript:void(0)" class="text-dark title"
-                                >Iphone mockup</a
-                              >
-                            </h5>
-                            <h6 class="text-muted tag mb-0">$ 16</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </Slide>
-                    <Slide>
-                      <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden mx-3"
-                      >
-                        <div class="card-body p-0">
-                          <a
-                            class="mfp-image d-inline-block"
-                            href="images/book/7.jpg"
-                            title=""
-                          >
-                            <img
-                              src="images/book/7.jpg"
-                              class="img-fluid shadow rounded"
-                              alt="work-image"
-                            />
-                          </a>
-                          <div class="content bg-white p-3">
-                            <h5 class="mb-0">
-                              <a href="javascript:void(0)" class="text-dark title"
-                                >Iphone mockup</a
-                              >
-                            </h5>
-                            <h6 class="text-muted tag mb-0">$ 16</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </Slide>
-                  </carousel>
-                </div>
-              </div>
-              <!--end row-->
-            </div>
-            <div class="container mt-100 mt-60">
-              <div class="row justify-content-center">
-                <div class="col-12">
-                  <div class="section-title text-center mb-4 pb-2">
-                    <h5 class="mb-4">研究成果</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="container">
-
-        <div class="row justify-content-center mt-4">
-          <div class="col-lg-8 col-12">
-            <carousel
-              id="single-owl"
-              class="owl-carousel owl-theme"
-              dir="ltr"
-              :per-page="1"
-              :loop="true"
-              :autoplay="true"
-            >
-              <Slide>
-                <div class="card rounded bg-light overflow-hidden border-0 m-2">
-                  <div class="row align-items-center no-gutters">
-                    <div class="col-md-4">
-                      <img
-                        src="images/book/1.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </div>
-
-                    <div class="col-md-8">
-                      <div class="card-body customer-testi">
-                        <h6 class="text-primary font-weight-bold">
-                          Thomas Israel
-                          <small class="text-muted d-block">Driver</small>
-                        </h6>
-                        <ul class="list-unstyled mb-0">
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                        </ul>
-                        <p class="text-muted h6 mb-0 font-italic">
-                          " It seems that only fragments of the original text
-                          remain in the Ipsum texts used today. The well known
-                          have originated in the 16th century. "
-                        </p>
-                      </div>
-                    </div>
-                    <!--end col-->
-                  </div>
-                  <!--end row-->
-                </div>
-                <!-- Review End -->
-              </Slide>
-              <Slide>
-                <!-- Review Start -->
-                <div class="card rounded bg-light overflow-hidden border-0 m-2">
-                  <div class="row align-items-center no-gutters">
-                    <div class="col-md-4">
-                      <img
-                        src="images/book/2.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <!--end col-->
-
-                    <div class="col-md-8">
-                      <div class="card-body customer-testi">
-                        <h6 class="text-primary font-weight-bold">
-                          Barbara McIntosh
-                          <small class="text-muted d-block">User</small>
-                        </h6>
-                        <ul class="list-unstyled mb-0">
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                        </ul>
-                        <p class="text-muted h6 mb-0 font-italic">
-                          " This seems that only fragments of the original text
-                          remain in the Ipsum texts used today. The well known
-                          have originated in the 16th century. "
-                        </p>
-                      </div>
-                    </div>
-                    <!--end col-->
-                  </div>
-                  <!--end row-->
-                </div>
-                <!-- Review End -->
-              </Slide>
-              <Slide>
-                <!-- Review Start -->
-                <div class="card rounded bg-light overflow-hidden border-0 m-2">
-                  <div class="row align-items-center no-gutters">
-                    <div class="col-md-4">
-                      <img
-                        src="images/book/3.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <!--end col-->
-
-                    <div class="col-md-8">
-                      <div class="card-body customer-testi">
-                        <h6 class="text-primary font-weight-bold">
-                          Christa Smith
-                          <small class="text-muted d-block">Passenger</small>
-                        </h6>
-                        <ul class="list-unstyled mb-0">
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                        </ul>
-                        <p class="text-muted h6 mb-0 font-italic">
-                          " I seems that only fragments of the original text
-                          remain in the Ipsum texts used today. The well known
-                          have originated in the 16th century. "
-                        </p>
-                      </div>
-                    </div>
-                    <!--end col-->
-                  </div>
-                  <!--end row-->
-                </div>
-                <!-- Review End -->
-              </Slide>
-              <Slide>
-                <!-- Review Start -->
-                <div class="card rounded bg-light overflow-hidden border-0 m-2">
-                  <div class="row align-items-center no-gutters">
-                    <div class="col-md-4">
-                      <img
-                        src="images/book/4.jpg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <!--end col-->
-
-                    <div class="col-md-8">
-                      <div class="card-body customer-testi">
-                        <h6 class="text-primary font-weight-bold">
-                          Carl Oliver
-                          <small class="text-muted d-block">Driver</small>
-                        </h6>
-                        <ul class="list-unstyled mb-0">
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                          <li class="list-inline-item">
-                            <i class="mdi mdi-star text-warning"></i>
-                          </li>
-                        </ul>
-                        <p class="text-muted h6 mb-0 font-italic">
-                          " Fully seems that only fragments of the original text
-                          remain in the Ipsum texts used today. The well known
-                          have originated in the 16th century. "
-                        </p>
-                      </div>
-                    </div>
-                    <!--end col-->
-                  </div>
-                  <!--end row-->
-                </div>
-                <!-- Review End -->
-              </Slide>
-            </carousel>
-          </div>
-        </div>
-            </div>
-        </section>
-
-        <section class="section" id="event">
-            <div class="container">
-                <div class="row align-items-center mb-4 pb-2">
-                    <div class="col-lg-6">
-                        <div class="section-title text-center text-lg-left">
-                            <h4 class="title mb-4 mb-lg-0">
-                                社区活动
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="section-title text-center text-lg-left">
-                            <p class="text-muted mb-0 mx-auto para-desc">
-                                OCC
-                                <span class="text-primary font-weight-bold">社区活动</span>
-                                旨在洞察未来
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="main-icon rounded-pill text-primary text-center mt-4 pt-2"></div>
-                        <div class="timeline-page pt-2 position-relative">
-                            <div class="timeline-item mt-4">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">2022.10.23 - 北京 - 故宫博物馆 - 【阿里斯顿咖啡机阿斯顿发布】</div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="card blog rounded border-0 shadow overflow-hidden">
-                                            <div class="row align-items-center no-gutters">
-                                                <div class="col-md-6 order-2 order-md-1">
-                                                    <div class="card-body content">
-                                                        <h5><a href="javascript:void(0)" class="card-title title text-dark">阿里烧烤的积分来看</a></h5>
-                                                        <p class="text-muted mb-0">Due to its widespread use as filler text for layouts, non-readability</p>
-                                                        <div class="post-meta d-flex justify-content-between mt-3">
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li class="list-inline-item mr-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="mdi mdi-heart-outline mr-1"></i>33</a></li>
-                                                                <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="mdi mdi-comment-outline mr-1"></i>08</a></li>
-                                                            </ul>
-                                                            <router-link to="/page-blog-detail" class="text-muted readmore">Read More <i class="mdi mdi-chevron-right"></i></router-link>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-6 order-1 order-md-2">
-                                                    <img src="images/work/15.jpg" class="img-fluid" alt="">
-                                                    <div class="overlay bg-dark"></div>
-                                                    <div class="author">
-                                                        <small class="text-light user d-block"><i class="mdi mdi-account"></i> 北京</small>
-                                                        <small class="text-light date"><i class="mdi mdi-calendar-check"></i> 2022.10.23</small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="rounded bg-primary p-lg-5 p-4">
+                    <div class="row align-items-end">
+                        <div class="col-md-4">
+                            <div class="section-title text-md-left text-center">
+                                <h5 class="mb-3 text-white title-dark">
+                                  加入开放城市共同体
+                                </h5>
+                                <p class="text-white-50 mb-0">
+                                  开放价值的转变 - 共同体 VS 网络等级制
+                                </p>
                             </div>
-                            <div class="timeline-item mt-4">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">2022.10.23 - 北京 - 故宫博物馆 - 【阿里斯顿咖啡机阿斯顿发布】</div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="card blog rounded border-0 shadow overflow-hidden">
-                                            <div class="row align-items-center no-gutters">
-                                                <div class="col-md-6 order-2 order-md-1">
-                                                    <div class="card-body content">
-                                                        <h5><a href="javascript:void(0)" class="card-title title text-dark">阿里烧烤的积分来看</a></h5>
-                                                        <p class="text-muted mb-0">Due to its widespread use as filler text for layouts, non-readability</p>
-                                                        <div class="post-meta d-flex justify-content-between mt-3">
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li class="list-inline-item mr-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="mdi mdi-heart-outline mr-1"></i>33</a></li>
-                                                                <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="mdi mdi-comment-outline mr-1"></i>08</a></li>
-                                                            </ul>
-                                                            <router-link to="/page-blog-detail" class="text-muted readmore">Read More <i class="mdi mdi-chevron-right"></i></router-link>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                        </div>
 
-                                                <div class="col-md-6 order-1 order-md-2">
-                                                    <img src="images/work/15.jpg" class="img-fluid" alt="">
-                                                    <div class="overlay bg-dark"></div>
-                                                    <div class="author">
-                                                        <small class="text-light user d-block"><i class="mdi mdi-account"></i> 北京</small>
-                                                        <small class="text-light date"><i class="mdi mdi-calendar-check"></i> 2022.10.23</small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline-item mt-4">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">2022.10.23 - 北京 - 故宫博物馆 - 【阿里斯顿咖啡机阿斯顿发布】</div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="card blog rounded border-0 shadow overflow-hidden">
-                                            <div class="row align-items-center no-gutters">
-                                                <div class="col-md-6 order-2 order-md-1">
-                                                    <div class="card-body content">
-                                                        <h5><a href="javascript:void(0)" class="card-title title text-dark">阿里烧烤的积分来看</a></h5>
-                                                        <p class="text-muted mb-0">Due to its widespread use as filler text for layouts, non-readability</p>
-                                                        <div class="post-meta d-flex justify-content-between mt-3">
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li class="list-inline-item mr-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="mdi mdi-heart-outline mr-1"></i>33</a></li>
-                                                                <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="mdi mdi-comment-outline mr-1"></i>08</a></li>
-                                                            </ul>
-                                                            <router-link to="/page-blog-detail" class="text-muted readmore">Read More <i class="mdi mdi-chevron-right"></i></router-link>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-6 order-1 order-md-2">
-                                                    <img src="images/work/15.jpg" class="img-fluid" alt="">
-                                                    <div class="overlay bg-dark"></div>
-                                                    <div class="author">
-                                                        <small class="text-light user d-block"><i class="mdi mdi-account"></i> 北京</small>
-                                                        <small class="text-light date"><i class="mdi mdi-calendar-check"></i> 2022.10.23</small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-md-8 mt-4 mt-sm-0">
+                            <div class="text-md-right text-center">
+                                <a href="javascript:void(0)" class="btn btn-light mr-1" v-b-modal.modal-co-creator>个人会员加入申请</a>
+                                <a href="javascript:void(0)" class="btn btn-light mr-1" v-b-modal.modal-project>企业会员加入申请</a>
+                                <a href="javascript:void(0)" class="btn btn-light" v-b-modal.modal-volunteer>志愿者加入申请</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                  <div class="col-12 text-center mt-4">
-                    <a href="javascript:void(0)" class="btn btn-primary btn-lg mt-4 mr-2">发起活动</a>
-                  </div>
-                </div>
-            </div>
-        </section>
-        <section class="section bg-light" id="about">
-          <div class="container mt-100 mt-60">
-            <div class="row align-items-center">
-              <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
-                <div class="position-relative">
-                  <img
-                    src="images/company/about.jpg"
-                    class="rounded img-fluid mx-auto d-block"
-                    alt=""
-                  />
-                </div>
-              </div>
-
-              <div class="col-lg-7 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
-                <div class="section-title ml-lg-4">
-                  <h4 class="title mb-4">关于我们</h4>
-                  <p class="text-muted">
-                    Start working with
-                    <span class="text-primary font-weight-bold">Landrick</span> that
-                    can provide everything you need to generate awareness, drive
-                    traffic, connect. Dummy text is text that is used in the
-                    publishing industry or by web designers to occupy the space
-                    which will later be filled with 'real' content. This is required
-                    when, for example, the final text is not yet available. Dummy
-                    texts have been in use by typesetters since the 16th century.
-                  </p>
-                  <a href="javascript:void(0)" class="btn btn-primary mt-3"
-                    >关注公众号<i class="mdi mdi-chevron-right"></i
-                  ></a>
-                </div>
-              </div>
             </div>
           </div>
         </section>
+
         <b-modal
             id="modal-project"
             hide-footer

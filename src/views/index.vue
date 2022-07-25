@@ -551,8 +551,8 @@ export default {
                         </div>
                         <div class="col-md-8 mt-4 mt-sm-0">
                             <div class="text-md-right text-center">
-                                <a href="https://www.wjx.top/vm/PpEMCrr.aspx" target="_blank" class="btn btn-light mr-1 mb-1" v-b-modal.modal-co-creator>个人会员加入申请</a>
-                                <a href="https://www.wjx.cn/vm/PwO77rE.aspx" target="_blank" class="btn btn-light mr-1 mb-1" v-b-modal.modal-project>企业会员加入申请</a>
+                                <a href="https://www.wjx.top/vm/PpEMCrr.aspx" target="_blank" class="btn btn-light mr-1 mb-1">个人会员加入申请</a>
+                                <a href="https://www.wjx.cn/vm/PwO77rE.aspx" target="_blank" class="btn btn-light mr-1 mb-1">企业会员加入申请</a>
                                 <a href="https://www.wjx.cn/vm/wVy1G0l.aspx" target="_blank" class="btn btn-light mb-1">志愿者加入申请</a>
                             </div>
                         </div>

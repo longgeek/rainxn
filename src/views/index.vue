@@ -120,7 +120,7 @@ export default {
             featuresData: [
                 {
                     icon: "uil uil-airplay",
-                    title: "OCC 认可价值",
+                    title: "开放价值的转变",
                     description:
                       "OCC认可价值是通过知识的共伴效应来创造的，维基百科和开源社区就是其中的两个案例，在开源社区中，社区成员互相交流知识，从而产生并分配价值，创造共同体。社区成员而非劳动或资本才是这里的生产实体，通过他们的贡献促成价值创造的条件。在现有体系下，人们不能从开放和贡献的行动中谋生，所以，即便我们创造价值，因为它没有市场价值，也不会被系统认可。有大量知识不具有市场价值，这是当今的根本问题之一。",
                 },
@@ -132,7 +132,7 @@ export default {
                 },
                 {
                     icon: "uil uil-edit-alt",
-                    title: "开放协同",
+                    title: "开放城市共同体",
                     description:
                       "开放共同体有助于开放协同，人们为特定目的而创造共生的合作实体。作为一个共同体成员，创造了大量对大家都可用的事物，特别是以知识的形式。每个人都可以做出贡献，每个人都可以使用它。但为了可持续，必须建立能连接当前市场的合作平台，开放城市共同体应运而生。",
                 },
@@ -544,20 +544,16 @@ export default {
                     <div class="row align-items-end">
                         <div class="col-md-4">
                             <div class="section-title text-md-left text-center">
-                                <h5 class="mb-3 text-white title-dark">
+                                <h5 class="mb-1 text-white title-dark">
                                   加入开放城市共同体
                                 </h5>
-                                <p class="text-white-50 mb-0">
-                                  开放价值的转变 - 共同体 VS 网络等级制
-                                </p>
                             </div>
                         </div>
-
                         <div class="col-md-8 mt-4 mt-sm-0">
                             <div class="text-md-right text-center">
-                                <a href="javascript:void(0)" class="btn btn-light mr-1" v-b-modal.modal-co-creator>个人会员加入申请</a>
-                                <a href="javascript:void(0)" class="btn btn-light mr-1" v-b-modal.modal-project>企业会员加入申请</a>
-                                <a href="javascript:void(0)" class="btn btn-light" v-b-modal.modal-volunteer>志愿者加入申请</a>
+                                <a href="https://www.wjx.top/vm/PpEMCrr.aspx" target="_blank" class="btn btn-light mr-1 mb-1" v-b-modal.modal-co-creator>个人会员加入申请</a>
+                                <a href="https://www.wjx.cn/vm/PwO77rE.aspx" target="_blank" class="btn btn-light mr-1 mb-1" v-b-modal.modal-project>企业会员加入申请</a>
+                                <a href="https://www.wjx.cn/vm/wVy1G0l.aspx" target="_blank" class="btn btn-light mb-1">志愿者加入申请</a>
                             </div>
                         </div>
                     </div>

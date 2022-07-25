@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         Copyright © {{ new Date().getFullYear() }} OpenCity Community. All rights reserved. 开放城市共同体.
-                        <a href="https://beian.miit.gov.cn/" target="_blank" class="text-dark">蒙ICP备2021005206号-1、蒙ICP备2021005206号-2</a>
+                        <a href="https://beian.miit.gov.cn/" target="_blank" class="text-dark">粤ICP备17123203号-2、粤ICP备17123203号-3</a>
                     </div>
                 </div>
             </div>

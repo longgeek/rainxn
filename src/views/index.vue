@@ -34,7 +34,7 @@ export default {
                     desc: '从市集到城市共同体，开源围绕着技术迭代、商业创新、产业升级、社会价值正加速进化进化。',
                     variant: 'primary',
                     type: [],
-                    link: "https://mp.weixin.qq.com/s/mpC4_lDCYL0GfHYP7097Cg",
+                    link: "https://mp.weixin.qq.com/s/WBBjlJ9h9TP6j9utAQwD2Q",
                 },
                 {
                     image: 'images/post/2.png',
@@ -42,7 +42,7 @@ export default {
                     desc: '“OCC百人谈”将以文字为主要载体，配合视频、音频等多种形式，窥探并记录中国数字经济起步之初的一页真实。',
                     variant: 'primary',
                     type: [],
-                    link: "https://mp.weixin.qq.com/s/6-vCqfXIJ3m1_6uju0KKGQ",
+                    link: "https://mp.weixin.qq.com/s/lHxHuykWHPFsFluP6FMsiQ",
                 },
                 {
                     image: 'images/post/3.png',
@@ -68,7 +68,7 @@ export default {
                     desc: '7月25日14:00，为了进一步促进科技与时尚的跨界融合，促进跨界创意与创新的诞生，为城市发展赋能，开放城市共同体携手社区成员特别企划本次活动。',
                     variant: 'primary',
                     type: [],
-                    link: "",
+                    link: "https://mp.weixin.qq.com/s/FK1-68195G507m-EloYaFg",
                 },
                 {
                     image: 'images/event/2.png',
@@ -76,7 +76,7 @@ export default {
                     desc: '7月22日晚6:30，由开放城市共同体发起人杜玉杰作为出品人的《开源创业和商业化探索》专场，将邀请到国内开源领域的资深代表，共同探讨开源和商业化背后那些不为人知的故事。',
                     variant: 'primary',
                     type: [],
-                    link: "https://mp.weixin.qq.com/s/ZL5HA_CcqXxQR4uL9XgjRg",
+                    link: "https://mp.weixin.qq.com/s/MWzvUQQqkGgue0FrGFHGew",
                 },
                 {
                     image: 'images/event/3.png',
@@ -84,7 +84,7 @@ export default {
                     desc: '7月20日晚8点，开放城市共同体特别筹划“谷歌创新冲刺分享沙龙”直播活动，如何摆脱创业发展过程的瓶颈问题，这里有一套完整的方法论。',
                     variant: 'primary',
                     type: [],
-                    link: "https://mp.weixin.qq.com/s/dluel-ncJfBStt9s1fASwQ",
+                    link: "https://mp.weixin.qq.com/s/PE5qTJeukSFzwHoRuijyfQ",
                 },
                 {
                     image: 'images/event/4.png',
@@ -92,7 +92,7 @@ export default {
                     desc: '7月6日晚8点，开源和商业的结合是否可以加速中国公司的成长？从创新的角度来看，中国软件的创新机遇又在哪里呢？关于开源的各种，在这里都有答案。',
                     variant: 'primary',
                     type: [],
-                    link: "https://mp.weixin.qq.com/s/nFbwNF3t6yeDxke0EEPB9g",
+                    link: "https://mp.weixin.qq.com/s/MLz7quAk2R0jDdE62yqesw",
                 },
             ],
             teamData: [

@@ -4,7 +4,7 @@
 
 <template>
     <div>
-        <footer class="footer footer-bar" id="footer">
+        <footer class="footer footer-bar text-center" id="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
